@@ -4,6 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      //chingiz is good man
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
