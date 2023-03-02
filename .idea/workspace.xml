@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="883a7483-2785-4ffa-89e1-0f22ea142013" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+=======
+<<<<<<< HEAD
+    <list default="true" id="883a7483-2785-4ffa-89e1-0f22ea142013" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
+=======
+    <list default="true" id="883a7483-2785-4ffa-89e1-0f22ea142013" name="Changes" comment="" />
+>>>>>>> 56034d69e76ea3d8fffb70df48049c90bc808ab1
+>>>>>>> ecb5b6f3f75968dbb5276b5cbfb992a541836eb2
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +32,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="2MPRgbC1g1PRjqC9JNdkYiYBTZg" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,9 +53,15 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/CreatePost" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -47,7 +71,17 @@
       <option name="presentableId" value="Default" />
       <updated>1677667342503</updated>
       <workItem from="1677667343971" duration="874000" />
+<<<<<<< HEAD
+      <workItem from="1677668400796" duration="687000" />
+      <workItem from="1677669092512" duration="1273000" />
+      <workItem from="1677762117407" duration="403000" />
+=======
       <workItem from="1677668400796" duration="324000" />
+<<<<<<< HEAD
+      <workItem from="1677773703826" duration="5202000" />
+=======
+>>>>>>> 56034d69e76ea3d8fffb70df48049c90bc808ab1
+>>>>>>> ecb5b6f3f75968dbb5276b5cbfb992a541836eb2
     </task>
     <servers />
   </component>
@@ -65,7 +99,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>

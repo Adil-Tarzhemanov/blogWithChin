@@ -1,0 +1,45 @@
+.root{
+  position: absolute;
+  text-align: center;
+
+
+  .modal{
+    height: 100vh;
+    width: 100vw;
+
+    background-color: black;
+    opacity: 0.1;
+
+  }
+  .content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    width: 400px;
+    border-radius: 10px;
+    padding: 20px 10px;
+    opacity: 1;
+    box-shadow: 0px 0px 1000px 20px rgba(0, 0, 0, .1);
+
+    button {
+      color: #534c56;
+      border: 1px solid gray;
+      width: 150px;
+      height: 25px;
+      border-radius: 4px;
+      background-color: white;
+    }
+    input{
+      margin-bottom: 20px;
+      outline:none;
+      border-radius: 3px;
+      border: 1px solid gray;
+      width: 300px;
+      height: 25px;
+    }
+
+  }
+}
