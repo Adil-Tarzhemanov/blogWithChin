@@ -1,0 +1,18 @@
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+
+    & .titleList {
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    & .postsList {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
