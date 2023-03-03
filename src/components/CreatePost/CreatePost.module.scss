@@ -16,24 +16,58 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-
+    padding-top: 15px;
+    height: 200px;
     background-color: white;
     width: 400px;
     border-radius: 10px;
-    padding: 20px 10px;
     opacity: 1;
-    box-shadow: 0px 0px 1000px 20px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 1000px 20px rgba(0, 0, 0, .1);
+
+    .errorText{
+      margin-top: 2px;
+      position: absolute;
+      left: 50%;
+      width: 400px;
+      transform: translate(-50%, 0%);
+
+      font-size: 14px;
+      color: #d20a40;
+
+    }
+    .closeSvg{
+      opacity: 0.5;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      cursor: pointer;
+      &:hover{
+        opacity: 0.7;
+      }
+      &:active{
+        opacity: 0.5;
+      }
+    }
 
     button {
-      color: #534c56;
-      border: 1px solid gray;
+      margin-top: 30px;
+      color: #3f3842;
+      border: 1px solid #3f3842;
       width: 150px;
       height: 25px;
       border-radius: 4px;
       background-color: white;
+      cursor: pointer;
+      opacity: 0.8;
+      &:hover{
+        opacity: 1;
+      }
+      &:active{
+        opacity: 0.7;
+      }
     }
     input{
-      margin-bottom: 20px;
+      margin-top: 20px;
       outline:none;
       border-radius: 3px;
       border: 1px solid gray;
