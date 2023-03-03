@@ -47,8 +47,8 @@ const CreatePost = ({setCreatePostIsOpen, setPostItems, postItems}) => {
 
           <input value={titleInput} onChange={(event) => setTitleInput(event.target.value)}
                  placeholder={'Заголовок'}/>
-          <input value={messageInput} onChange={(event) => setMessageInput(event.target.value)}
-                 placeholder={'Сообщение'}/>
+          <textarea placeholder={'Сообщение'} className={styles.messageInput} value={messageInput} onChange={(event) => setMessageInput(event.target.value)}
+                 />
           <div className={styles.errorText}>{errorText}</div>
 
           <button onClick={onClickCreatePost}>Опубликовать</button>

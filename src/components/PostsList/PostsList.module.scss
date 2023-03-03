@@ -2,15 +2,22 @@
     margin: 0 auto;
     max-width: 800px;
     width: 100%;
+    position: relative;
 
+    .createPostButton{
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+
+    }
     & .titleList {
-        margin: 0 auto;
-        margin-top: 50px;
+        //margin: 0 auto;
+        padding-top: 50px;
         text-align: center;
     }
 
     & .postsList {
-        margin-top: 50px;
+        margin-top: 60px;
         display: flex;
         flex-direction: column;
         gap: 20px;

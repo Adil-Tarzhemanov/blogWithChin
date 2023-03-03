@@ -49,8 +49,12 @@
         opacity: 0.5;
       }
     }
+    .messageInput{
+      height: 50px;
+    }
 
     button {
+
       margin-top: 30px;
       color: #3f3842;
       border: 1px solid #3f3842;
@@ -66,6 +70,16 @@
       &:active{
         opacity: 0.7;
       }
+    }
+
+    textarea{
+      margin-top: 20px;
+      outline:none;
+      border-radius: 3px;
+      border: 1px solid gray;
+      width: 300px;
+      height: 25px;
+      resize: none;
     }
     input{
       margin-top: 20px;

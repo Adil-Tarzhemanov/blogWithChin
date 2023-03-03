@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Home.module.scss";
 import CreatePost from "../../components/CreatePost/CreatePost";
-import {PostsList} from "../../components/PostsLists/PostsList";
+import {PostsList} from "../../components/PostsList/PostsList";
 
 const Home = () => {
   const [createPostIsOpen, setCreatePostIsOpen] = React.useState(false);
@@ -32,8 +32,10 @@ const Home = () => {
             />
         }
 
-        <button onClick={onClickCreatePost}>ПОСТ</button>
-        <PostsList postItems={postItems}/>
+        {/*<button onClick={onClickCreatePost}>ПОСТ</button>*/}
+        <PostsList
+            setCreatePostIsOpen={setCreatePostIsOpen}
+            postItems={postItems}/>
       </div>
   );
 }
