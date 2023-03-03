@@ -1,14 +1,17 @@
-import s from './App.scss'
+import s from './App.module.scss'
 import CreatePost from "./components/CreatePost/CreatePost";
 import React from "react";
+import './App.css';
+import { PostsList } from './components/PostsLists/PostsList';
 
 function App() {
-  const [createPostIsOpen, setCreatePostIsOpen] = React.useState(false)
-  const [postItems, setPostItems] = React.useState([])
+  const [createPostIsOpen, setCreatePostIsOpen] = React.useState(false);
+  const [postItems, setPostItems] = React.useState([]);
 
   const onClickCreatePost = () => {
     setCreatePostIsOpen(prevState => !prevState)
   }
+  
   return (
       <div className={s.App}>
         {
@@ -20,6 +23,7 @@ function App() {
         }
 
         <button onClick={onClickCreatePost}>ПОСТ</button>
+        <PostsList />
       </div>
   );
 }
