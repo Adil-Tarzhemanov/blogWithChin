@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "../../App.module.scss";
-import CreatePost from "../CreatePost/CreatePost";
-import {PostsList} from "../PostsLists/PostsList";
+import styles from "./Home.module.scss";
+import CreatePost from "../../components/CreatePost/CreatePost";
+import {PostsList} from "../../components/PostsLists/PostsList";
 
 const Home = () => {
   const [createPostIsOpen, setCreatePostIsOpen] = React.useState(false);
@@ -23,7 +23,7 @@ const Home = () => {
   }
 
   return (
-      <div className={styles.App}>
+      <div className={styles.container}>
         {
             createPostIsOpen && <CreatePost
                 setCreatePostIsOpen={setCreatePostIsOpen}
