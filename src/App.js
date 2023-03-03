@@ -13,6 +13,7 @@ function App() {
       <div className={s.App}>
         {
             createPostIsOpen && <CreatePost
+                setCreatePostIsOpen={setCreatePostIsOpen}
                 setPostItems={setPostItems}
                 postItems={postItems}
             />
