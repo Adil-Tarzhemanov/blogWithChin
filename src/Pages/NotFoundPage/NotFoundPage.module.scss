@@ -1,0 +1,15 @@
+.container{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-80%);
+
+  .title{
+    font-size: 32px;
+    font-weight: 500;
+  }
+  .message{
+    font-size: 18px;
+  }
+
+}

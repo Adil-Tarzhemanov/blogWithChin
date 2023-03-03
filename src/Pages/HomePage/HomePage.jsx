@@ -1,9 +1,10 @@
 import React from "react";
-import styles from "./Home.module.scss";
+import styles from "./HomePage.module.scss";
 import CreatePost from "../../components/CreatePost/CreatePost";
 import {PostsList} from "../../components/PostsList/PostsList";
+import {Route} from "react-router-dom";
 
-const Home = () => {
+const HomePage = () => {
   const [createPostIsOpen, setCreatePostIsOpen] = React.useState(false);
   const [postItems, setPostItems] = React.useState([
     {
@@ -31,6 +32,7 @@ const Home = () => {
                 postItems={postItems}
             />
         }
+        <Route path={'/3'} element={<div>himan</div>}/>
 
         {/*<button onClick={onClickCreatePost}>ПОСТ</button>*/}
         <PostsList
@@ -39,4 +41,4 @@ const Home = () => {
       </div>
   );
 }
-export default Home;
+export default HomePage;
