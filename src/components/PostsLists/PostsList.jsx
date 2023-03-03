@@ -8,8 +8,11 @@ export const PostsList = ({ postItems }) => {
                 Список постов
             </h1>
             <div className={styles.postsList}>
-                {postItems.map((post, index) => 
-                    <Post post={post} index={index} />
+                {postItems.map((post, index) =>
+                    <Post
+                        key={post.id}
+                        post={post}
+                        index={index} />
                 )} 
             </div>
         </div>
