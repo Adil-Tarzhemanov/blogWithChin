@@ -1,16 +1,51 @@
-.post {
-    padding: 20px 30px;
-    border: 1px solid rgb(0, 6, 128);
-    border-radius: 10px;
-    position: relative;
+.postWrapper {
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s;
 
-    & .index {
-        position: absolute;
-        right: 5px;
-        top: 5px;
-        padding: 2px 10px;
-        border: 1px solid teal;
+    & .post {
+        padding: 20px 30px;
+        border: 2px solid rgb(0, 6, 128);
         border-radius: 10px;
-        color: teal;
+        position: relative;
+        cursor: pointer;
+        z-index: 1;
+        background: white;
+      
+        & .index {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            padding: 2px 10px;
+            border: 1px solid teal;
+            border-radius: 10px;
+            color: teal;
+        }
+    }
+
+    & .editElements {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        opacity: 0;
+        transition: transform 0.3s;
+        transform: translate(-42px);
+
+        & .deletePost, .changePost {
+            border: 1px solid rgb(0, 6, 128);
+            border-left: none;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            cursor: pointer;
+        }
+    }
+
+    &:hover {
+        transform: scale(1.05);
+
+        & .editElements {
+            transform: translateX(0);
+            opacity: 1;
+        }
     }
 }
