@@ -1,18 +1,16 @@
 import React from "react";
-import HomePage from "./Pages/HomePage/HomePage"
-import {Routes,Route} from "react-router-dom";
-import NotFoundPage from "./Pages/NotFoundPage/NotFoundPage";
-import PostPage from "./Pages/PostPage/PostPage";
+import Home from "./Pages/Home/Home"
+import {Routes, Route} from "react-router-dom";
+import NotFound from "./Pages/NotFound/NotFound";
+import FullPost from "./Pages/Post/FullPost";
 
 function App() {
   return (
       <Routes>
-        <Route path={'/'} element={<HomePage/>}/>
-        <Route path={'/4'} element={<PostPage/>}/>
-        <Route path={'*'} element={<NotFoundPage/>}/>
-
+        <Route path={'/'} element={<Home/>}/>
+        <Route path={'/post/:id'} element={<FullPost/>}/>
+        <Route path={'*'} element={<NotFound/>}/>
       </Routes>
-
   )
 }
 

@@ -1,6 +1,6 @@
-import styles from './NotFoundPage.module.scss'
+import styles from './NotFound.module.scss'
 
-const NotFoundPage = () => {
+const NotFound = () => {
   return (
       <div className={styles.container}>
         <p className={styles.title}>Данная страница не найдена</p>
@@ -8,4 +8,4 @@ const NotFoundPage = () => {
       </div>
   )
 }
-export default NotFoundPage;
+export default NotFound;

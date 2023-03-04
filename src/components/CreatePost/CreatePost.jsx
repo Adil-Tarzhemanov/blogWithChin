@@ -1,12 +1,14 @@
 import styles from './CreatePost.module.scss'
 import React from "react";
+import {useDispatch} from "react-redux";
+import {addPostItem} from "../../redux/slices/postSlice";
 
-const CreatePost = ({setCreatePostIsOpen, setPostItems, postItems}) => {
+const CreatePost = ({setCreatePostIsOpen, postItems}) => {
 
   const [titleInput, setTitleInput] = React.useState('')
   const [messageInput, setMessageInput] = React.useState('')
   const [errorText, setErrorText] = React.useState('')
-
+  const dispatch=useDispatch()
 
   const onClickCreatePost = () => {
 
@@ -20,7 +22,7 @@ const CreatePost = ({setCreatePostIsOpen, setPostItems, postItems}) => {
         text: messageInput,
       }
       setCreatePostIsOpen(prevState => !prevState)
-      setPostItems(prevState => [...prevState, newPost])
+      dispatch(addPostItem(newPost))
       setTitleInput('')
       setMessageInput('')
       setErrorText('')
