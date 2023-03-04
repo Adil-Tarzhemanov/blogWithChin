@@ -8,8 +8,9 @@ const Home = () => {
   const dispatch=useDispatch()
   const {postItems}=useSelector((state) => state.postSlice)
   const [createPostIsOpen, setCreatePostIsOpen] = React.useState(false);
-
-
+  const onClickCreatePost = () => {
+    setCreatePostIsOpen(prevState => !prevState);
+  }
   return (
       <div className={styles.container}>
         {
@@ -19,10 +20,12 @@ const Home = () => {
             />
         }
 
+
         <PostsList
             setCreatePostIsOpen={setCreatePostIsOpen}
             postItems={postItems}/>
       </div>
   );
 }
+
 export default Home;
