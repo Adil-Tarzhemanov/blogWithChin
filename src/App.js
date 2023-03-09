@@ -1,16 +1,26 @@
 import React from "react";
-import Home from "./Pages/Home/Home"
+import Home from "./pages/Home/Home"
 import {Routes, Route} from "react-router-dom";
-import NotFound from "./Pages/NotFound/NotFound";
-import FullPost from "./Pages/Post/FullPost";
+import NotFound from "./pages/NotFound/NotFound";
+import FullPost from "./pages/FullPost/FullPost";
+import BurgerMenu from "./components/BurgerMenu/BurgerMenu";
+import MainLayout from "./layouts/MainLayout";
+import styles from './App.module.scss'
 
 function App() {
   return (
-      <Routes>
-        <Route path={'/'} element={<Home/>}/>
-        <Route path={'/post/:id'} element={<FullPost/>}/>
-        <Route path={'*'} element={<NotFound/>}/>
-      </Routes>
+      <div className={styles.container}>
+        <Routes>
+          <Route path={'/'} element={<MainLayout/>}>
+
+            <Route path={''} element={<Home/>}/>
+            <Route path={'post/:id'} element={<FullPost/>}/>
+            <Route path={'*'} element={<NotFound/>}/>
+
+          </Route>
+        </Routes>
+      </div>
+
   )
 }
 

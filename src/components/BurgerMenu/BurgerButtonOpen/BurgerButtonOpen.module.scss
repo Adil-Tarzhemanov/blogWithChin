@@ -1,0 +1,63 @@
+.container {
+  position: absolute;
+  margin: 0 10px 10px 10px ;
+  height: 64px;
+  width: 64px;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.1);
+  left: 20px;
+  top: 20px;
+  cursor: pointer;
+  z-index: 100;
+
+
+  .open{
+    display: grid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    gap: 10px;
+    .stick{
+      background-color: white;
+      height: 4px;
+      width: 40px;
+      border-radius: 2px;
+
+    }
+
+
+  }
+
+  .close{
+
+  }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

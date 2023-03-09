@@ -1,0 +1,14 @@
+.container {
+  position: absolute;
+  height: 100vh;
+  width: 250px;
+  background-color: cadetblue;
+  transform: translateX(-100%);
+  visibility: hidden;
+  transition: transform 0.1s linear, visibility 0.1s linear;
+}
+
+.visibility {
+  visibility: visible;
+  transform: translateX(0);
+}

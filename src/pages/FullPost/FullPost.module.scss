@@ -1,0 +1,62 @@
+
+.container {
+  width: 800px;
+  //height: 100vh;
+  margin: 0 auto;
+  padding-top: 118px;
+
+
+  .backButton {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: transform 0.1s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .postWrapper {
+    display: flex;
+    max-width: 800px;
+    max-height: 100%;
+
+    .post {
+      padding: 20px 30px;
+      border: 2px solid rgb(0, 6, 128);
+      border-radius: 10px;
+      min-height: 127px;
+      z-index: 1;
+      min-width: 800px;
+
+
+      .text {
+        max-height: 70px;
+        transition: max-height 2s ease-in-out;
+        overflow: hidden;
+      }
+
+      .maxHeightAnim {
+        max-height: 500px;
+      }
+
+    }
+
+    .editElements {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      opacity: 1;
+      margin-top: 20px;
+
+      .deletePost, .changePost {
+        border: 1px solid rgb(0, 6, 128);
+        border-left: none;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}

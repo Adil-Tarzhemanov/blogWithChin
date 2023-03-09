@@ -8,6 +8,11 @@
         position: absolute;
         right: 37px;
         cursor: pointer;
+        transition: transform 0.1s;
+        &:hover{
+            transform: scale(1.05);
+
+        }
     }
     & .titleList {
         padding-top: 50px;
