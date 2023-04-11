@@ -11,8 +11,6 @@ const CreatePost = ({setCreatePostIsOpen, postItems}) => {
   const dispatch=useDispatch()
 
   const onClickCreatePost = () => {
-
-
     if (titleInput.length > 0 && messageInput.length > 0) {
       const newPost = {
         id: postItems.length === 0
@@ -37,7 +35,7 @@ const CreatePost = ({setCreatePostIsOpen, postItems}) => {
 
   return (
       <div className={styles.root}>
-        <div className={styles.modal}></div>
+        <div onClick={() => setCreatePostIsOpen(prevState => !prevState)} className={styles.modal}></div>
 
         <div className={styles.content}>
           <svg onClick={() => setCreatePostIsOpen(false)} className={styles.closeSvg} width="20px" height="20px"
