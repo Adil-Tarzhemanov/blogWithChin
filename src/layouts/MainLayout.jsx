@@ -6,7 +6,7 @@ import {useState} from "react";
 
 
 const MainLayout = () => {
-  const [isOpened, setIsOpened] = useState(true)
+  const [isOpened, setIsOpened] = useState(false)
   return (
         <>
           <BurgerButtonOpen

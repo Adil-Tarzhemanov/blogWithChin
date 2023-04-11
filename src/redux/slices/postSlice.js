@@ -21,9 +21,8 @@ const initialState = {
       id: 4,
       title: 'Большой текст',
       text: 'Воробей — маленькая, неунывающая, бойкая птичка. Про него часто говорят: «серый воробышек». А ведь на самом деле воробей совсем не серый. Спинка у него коричневая с широкими продольными полосами. Хвост темно-бурый, крылышки тоже темно- бурые, украшенные рыжеватой каймой, подбородок и горло черные, а вот головка серая. ' +
-          'Весной, едва пригреет солнышко, воробьи оживляются, собираются в шумные стайки, рассаживаются на изгородях, ветках кустарников и задорно чирикают: «Чик-чирик-чирик-чирик! Как хорошо, что к нам пришла весна!» Если найдет озорной воробьишка небольшую лужицу с талой водой, то норовит «принять ванну», смыть поскорее зимнюю грязь — поплещется в холодной прозрачной воде, а потом взъерошит перышки и отряхнется.'
+          'Весной, едва пригреет солнышко, воробьи оживляются, собираются в шумные стайки, рассаживаются на изгородях, ветках кустарников и задорно чирикают: «Чик-чирик-чирик-чирик! Как хорошо, что к нам пришла весна!» Если найдет озорной воробьишка небольшую лужицу с талой водой, то норовит «принять ванну», смыть поскорее зимнюю грязь'
     }
-
 
 
   ],
@@ -36,11 +35,16 @@ const postSlice = createSlice({
     addPostItem(state, action) {
       state.postItems = [...state.postItems, action.payload]
     },
-    setPostItems(state, action) {
-      state.postItems = action.payload
-    }
+    deletePostItemById(state, action) {
+      state.postItems = state.postItems.filter((post) => post.id !== action.payload)
+    },
+    changePostItem(state, action) {
+      const findPost = state.postItems.find((post) => post.id === action.payload.id)
+      findPost.text = action.payload.text
+    },
+
   }
 })
 
-export const {setPostItems, addPostItem} = postSlice.actions
+export const {addPostItem, deletePostItemById, changePostItem} = postSlice.actions
 export default postSlice.reducer

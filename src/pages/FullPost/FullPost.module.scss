@@ -1,62 +1,80 @@
 
 .container {
-  width: 800px;
-  //height: 100vh;
-  margin: 0 auto;
-  padding-top: 118px;
+  width: 100vw;
+  height: 100vh;
+  .content{
 
+    margin: 0 auto;
+    width: 800px;
+    padding-top: 118px;
 
-  .backButton {
-    margin-left: 5px;
-    margin-bottom: 5px;
-    cursor: pointer;
-    transition: transform 0.1s;
+    .backButton {
+      margin-left: 5px;
+      margin-bottom: 5px;
+      cursor: pointer;
+      transition: transform 0.1s;
 
-    &:hover {
-      transform: scale(1.05);
-    }
-  }
-
-  .postWrapper {
-    display: flex;
-    max-width: 800px;
-    max-height: 100%;
-
-    .post {
-      padding: 20px 30px;
-      border: 2px solid rgb(0, 6, 128);
-      border-radius: 10px;
-      min-height: 127px;
-      z-index: 1;
-      min-width: 800px;
-
-
-      .text {
-        max-height: 70px;
-        transition: max-height 2s ease-in-out;
-        overflow: hidden;
+      &:hover {
+        transform: scale(1.05);
       }
-
-      .maxHeightAnim {
-        max-height: 500px;
-      }
-
     }
 
-    .editElements {
+    .postWrapper {
       display: flex;
-      flex-direction: column;
-      gap: 2px;
-      opacity: 1;
-      margin-top: 20px;
+      max-width: 800px;
+      height: 100%;
 
-      .deletePost, .changePost {
-        border: 1px solid rgb(0, 6, 128);
-        border-left: none;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        cursor: pointer;
+      .post {
+        padding: 20px 30px;
+        border: 2px solid rgb(0, 6, 128);
+        border-radius: 10px;
+        min-height: 138px;
+        min-width: 800px;
+        z-index: 1;
+
+        .textarea{
+          border: 0;
+          width: 100%;
+          outline: none;
+          overflow: hidden;
+          resize: none;
+          background: none;
+          height: auto;
+        }
+        .text {
+          padding: 2px 2px 8px 2px;
+          //max-height: 70px;
+          transition: max-height 2s ease-in-out;
+          overflow: hidden;
+        }
+        .hidden{
+          visibility: hidden;
+          position: absolute;
+          max-width: 736.25px;
+        }
+
+        .maxHeightAnim {
+          //max-height: 500px;
+        }
+
+      }
+
+      .editElements {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        opacity: 1;
+        margin-top: 20px;
+
+        .deletePost, .changePost {
+          border: 1px solid rgb(0, 6, 128);
+          border-left: none;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          cursor: pointer;
+        }
       }
     }
   }
+
 }
